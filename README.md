@@ -164,6 +164,10 @@ to the update request provided:
 
 The only required key is "url", the others are optional.
 
+**Please note!** Due to an [open issue](https://github.com/Squirrel/Squirrel.Windows/issues/414) in Squirrel,
+you must be careful if the URL contains spaces. For the time being, it's easiest
+just to remove all spaces from the URL.
+
 Squirrel will request "url" with `Accept: application/zip` and only supports
 installing ZIP updates. If future update formats are supported their MIME type
 will be added to the `Accept` header so that your server can return the
